@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="logo">CRUD</div>
+      <div class="mobile">||||</div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Create</a></li>
+          <li><a href="#">Read</a></li>
+          <li><a href="#">Update</a></li>
+          <li><a href="#">Delete</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Header End -->
+    <div class="add-update-form">
+      <!-- Add Form Start-->
+      <div class="form">
+        <h1>Add Product</h1>
+        <input type="url" id="image" placeholder="Please Enter URl" required />
+        <input
+          type="text"
+          id="title"
+          placeholder="Please Enter Title"
+          required
+        />
+        <input
+          type="text"
+          id="description"
+          placeholder="Enter Please Description"
+          required
+        />
+        <input
+          type="number"
+          id="price"
+          placeholder="Please Enter Price"
+          required
+        />
+        <div class="wraps">
+          <p id="show-error" style="color: red"></p>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
+      <!-- Add Form End-->
+      <!-- update Form Start-->
+      <div class="form">
+        <h1>Update Product</h1>
+        <input
+          type="url"
+          id="image-edit"
+          placeholder="Please Enter URl"
+          required
+        />
+        <input
+          type="text"
+          id="title-edit"
+          placeholder="Please Enter Title"
+          required
+        />
+        <input
+          type="text"
+          id="description-edit"
+          placeholder="Enter Please Description"
+          required
+        />
+        <input
+          type="number"
+          id="image-edit"
+          placeholder="Please Enter Price"
+          required
+        />
+        <div class="wraps">
+          <button type="submit" id="edit">Update</button>
+        </div>
+      </div>
+      <!-- Update Form End-->
+    </div>
+    <hr />
+
+    <h1 style="text-align: center" id="list">Product list</h1>
+    <div class="container"></div>
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2024 CRUD Operations. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+    <script src="./script.js"></script>
+  </body>
+</html>
